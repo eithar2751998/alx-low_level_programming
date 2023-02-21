@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
- * main - Print 10 times the alphabet, in lowercase, followed by a new line.
+ * _isalpha - checks for alphabetic character.
+ * @c: character to be checked
  * Return: Always 0
  */
 int _isalpha(int c)
 {
-     if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	     reurn (1);
+	if ((c >= 'a' && c <= 'z') ||
+	    (c >= 'A' && c <= 'Z'))
+		return (1);
 	else
 		return (0);
 }
+
