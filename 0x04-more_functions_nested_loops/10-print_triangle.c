@@ -10,7 +10,7 @@
 
 void print_triangle(int size)
 {
-	int i,j,k;
+	int row, hashes, spaces;
 
 	if (size <= 0)
 	{
@@ -18,13 +18,13 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for ( i = 0; i <= size; i++)
+		for (row = 1; row <= size; row++)
 		{
-			for (j = size - i; j >= 1; j--)
+			for (spaces = size - row; spaces >= 1; spaces--)
 			{
 				_putchar(' ');
 			}
-			for (k = 1; k <= i; k++)
+			for (hashes = 1; hashes <= row; hashes++)
 			{
 				_putchar('#');
 			}
@@ -32,3 +32,4 @@ void print_triangle(int size)
 		}
 	}
 }
+
