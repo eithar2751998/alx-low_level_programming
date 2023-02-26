@@ -8,19 +8,19 @@
  */
 
 
-vvoid print_square(int size)
+void print_diagonal(int n)
 {
 	int i, j;
 
-	if (size <= 0)
+	if (n <= 0)
 		_putchar('\n');
-
-	for (i = 0; i < size; i++)
+	for (i = 0; i < n; i++)
 	{
-		for (j = 0; j < (size); j++)
+		for (j = 0; j < i; j++)
 		{
-			_putchar('#');
+			_putchar(' ');
 		}
+		_putchar('\\');
 		_putchar('\n');
 	}
 
